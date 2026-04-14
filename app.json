@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "my-expo-app",
-    "slug": "my-expo-app",
+    "slug": "ayeeeen",
     "version": "1.0.0",
     "web": {
       "favicon": "./assets/favicon.png"
@@ -22,7 +22,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.alwahdi.ayeen",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -30,6 +34,12 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.alwahdi.myexpoapp"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4f0fe6a4-183c-47ba-8724-e3a630030252"
+      }
+    },
+    "owner": "alwahdi"
   }
 }
