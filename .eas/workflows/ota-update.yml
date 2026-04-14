@@ -1,0 +1,11 @@
+name: OTA Update Only
+
+on:
+  push:
+    branches: [main, develop]
+
+jobs:
+  update:
+    type: update
+    params:
+      branch: ${{ github.ref_name == 'main' && 'production' || 'development' }}
